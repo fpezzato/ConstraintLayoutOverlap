@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ConstraintLayoutOverlap</string>
+    <string name="top_description">I am always on the top</string>
+    <string name="bottom_description">I am always on the bottom\n(but I have very low priority)</string>
+</resources>
