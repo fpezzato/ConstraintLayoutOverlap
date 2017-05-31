@@ -14,6 +14,7 @@ import static org.fpezzato.lib.util.OverlappingDetector.isVerticalOverlapping;
 
 public class NotOverlappingConstraintLayout extends ConstraintLayout {
 
+    private static final int DURATION = 100;
     private float originalViewToHideAlpha;
     private WeakReference<View> hide = new WeakReference<>(null);
     private WeakReference<View> keep = new WeakReference<>(null);
@@ -64,7 +65,7 @@ public class NotOverlappingConstraintLayout extends ConstraintLayout {
                 } else {
                     if (animatorOut == null || !animatorOut.isRunning()) {
                         animatorOut = ofFloat(viewToHide, View.ALPHA, 0)
-                                .setDuration(100);
+                                .setDuration(DURATION);
                         animatorOut.start();
                     }
                 }
@@ -76,7 +77,7 @@ public class NotOverlappingConstraintLayout extends ConstraintLayout {
                 }
                 if (animatorIn == null || !animatorIn.isRunning()) {
                     animatorIn = ofFloat(viewToHide, View.ALPHA, originalViewToHideAlpha)
-                            .setDuration(100);
+                            .setDuration(DURATION);
                     animatorIn.start();
                 }
             }
@@ -97,6 +98,5 @@ public class NotOverlappingConstraintLayout extends ConstraintLayout {
             throw new IllegalArgumentException("The views must be siblings");
         }
     }
-
 
 }
