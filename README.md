@@ -39,7 +39,7 @@ In this git repo you can find an example called `NotOverlappingConstraintLayout`
 On the plus size: not a single frame is lost! yay!
 
 In the following demo: the 'snake' image cannot be resized, but can be hidden
-![Demo](https://thumbs.gfycat.com/AnguishedTotalElectriceel-size_restricted.gif)
+![Demo](https://thumbs.gfycat.com/DismalGreedyGoral-size_restricted.gif)
 
 # Note:
 1) This is a proof of concept, but if there is any interest just let me know I can extract it into a proper library
