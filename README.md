@@ -42,5 +42,6 @@ In the following demo: the 'snake' image cannot be resized, but can be hidden
 ![Demo](https://thumbs.gfycat.com/DismalGreedyGoral-size_restricted.gif)
 
 # Note:
-1) This is a proof of concept, but if there is any interest just let me know I can extract it into a proper library
-2) For this demo I'm using a ConstraintLayout. The latest release is 1.1.0-beta1. If in the future this use case will be supported I'll deprecate this entire project!
+1. This is a proof of concept, but if there is any interest just let me know I can extract it into a proper library
+2. For this demo I'm using a ConstraintLayout. The latest release is 1.1.0-beta1. If in the future this use case will be supported I'll deprecate this entire project!
+3. Are you wondering: who wrote such strange UI requirements, where a view cannot be resized but can be hidden? Well, just one word: _advert_! 
