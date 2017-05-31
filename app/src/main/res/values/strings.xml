@@ -3,4 +3,5 @@
     <string name="top_description">I am the Lion! I can\'t be overlapped by the snake!</string>
     <string name="bottom_description">I am always on the bottom and a 2:1 ratio\n(but I have very low priority)</string>
     <string name="run">run!</string>
+    <string name="textview">I am a title</string>
 </resources>
