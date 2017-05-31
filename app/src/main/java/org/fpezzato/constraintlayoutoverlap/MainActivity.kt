@@ -6,6 +6,7 @@ import android.animation.ValueAnimator.REVERSE
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.DisplayMetrics
+import android.view.View.GONE
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -21,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         initClickListeners()
 
         //Quick solution: OnPreDrawListener to change visibility.
-        /*main_container.viewTreeObserver.addOnPreDrawListener(object : ViewTreeObserver.OnPreDrawListener {
+       /* main_container.viewTreeObserver.addOnPreDrawListener(object : ViewTreeObserver.OnPreDrawListener {
             override fun onPreDraw(): Boolean {
                 main_container.viewTreeObserver.removeOnPreDrawListener(this)
 
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity() {
                     bottom_view.visibility = GONE
                 }
 
-                return false
+                return false //This is important! Otherwise a single frame with the view flashes on screen.
             }
         })*/
     }
@@ -37,6 +38,7 @@ class MainActivity : AppCompatActivity() {
     private fun initClickListeners() {
         run.setOnClickListener {
             if(!anim.isRunning) {
+                run.visibility = GONE
                 anim = ValueAnimator.ofInt(main_container.measuredHeight, dpToPixel(300).toInt())
                 anim.addUpdateListener { valueAnimator ->
                     val layoutParams = main_container.layoutParams
