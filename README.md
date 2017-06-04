@@ -41,10 +41,15 @@ On the plus size: not a single frame is lost! yay!
 In the following demo: the 'snake' image cannot be resized, but can be hidden
 ![Demo](https://thumbs.gfycat.com/DismalGreedyGoral-size_restricted.gif)
 
+## Case 3
+..or to avoid coding just have different layouts with screen size modifiers, as suggested by @camaelon in https://twitter.com/petz/status/871320692016414720
+
+
 # Note:
 1. This is a proof of concept, but if there is any interest just let me know I can extract it into a proper library
 2. For this demo I'm using a ConstraintLayout. The latest release is 1.1.0-beta1. If in the future this use case will be supported I'll deprecate this entire project!
 3. Are you wondering: who wrote such strange UI requirements, where a view cannot be resized but can be hidden? Well, just one word: _advert_! 
+4. This kind of approach has been suggested during a discussion at Google I/O 2017 with @johnhoford & @camaelon 
 
 ---
 Thanks to pixabay.com for the images used in the sample code.
